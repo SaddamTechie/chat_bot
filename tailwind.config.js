@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode:'jit',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -9,7 +10,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primary:'#202225',
+        main:'#FFFFFF',
+        'main-dark':'#1E201E',
+        primary:'#FFF7D1',
+        'primary-dark':'#3C3D37',
+        'light-theme-text':'#000000',
+        'dark-theme-text':'#FFFFFF',
         secondary:'#5865f2',
         gray:colors.emerald,
         gray:{
